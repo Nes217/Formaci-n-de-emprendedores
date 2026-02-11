@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pollos El Regio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="hero">
+        <img src="logo.jpeg" class="logo" alt="Pollos El Regio">
+        <h1>Pollos El Regio</h1>
+        <p>El auténtico sabor a la parrilla 🔥</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#pedido">Pedidos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="card fade">
+        <h2>¿Quiénes somos?</h2>
+        <p>
+            Somos un negocio familiar especializado en pollo asado al carbón,
+            marinados caseros y el mejor sabor regio.
+        </p>
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="card fade">
+        <h2>Menú con precios</h2>
+
+        <div class="menu-grid">
+            <div class="item">🍗 Pollo entero <span>$180</span></div>
+            <div class="item">🍗 Medio pollo <span>$95</span></div>
+            <div class="item">🌮 Tacos de pollo <span>$60</span></div>
+            <div class="item">🥤 Combo familiar <span>$320</span></div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="card fade">
+        <h2>Galería</h2>
+
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1604908176997-4313c7fdd1c7" alt="">
+            <img src="https://images.unsplash.com/photo-1598514982846-3f4c8a9f75e1" alt="">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="">
+        </div>
+    </section>
+
+    <!-- PEDIDOS -->
+    <section id="pedido" class="card fade">
+        <h2>Pedido en línea</h2>
+
+        <form id="formPedido">
+            <input type="text" placeholder="Nombre" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <select required>
+                <option value="">Selecciona tu pedido</option>
+                <option>Pollo entero</option>
+                <option>Medio pollo</option>
+                <option>Tacos</option>
+                <option>Combo familiar</option>
+            </select>
+            <button type="submit">Enviar pedido</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+
+        <p>📍 Tu dirección aquí</p>
+        <p>📞 000-000-0000</p>
+
+        <div class="botones-contacto">
+            <button onclick="abrirWhatsApp()">WhatsApp</button>
+
+            <a href="https://facebook.com/tupagina" target="_blank" class="social facebook">Facebook</a>
+
+            <a href="https://instagram.com/tupagina" target="_blank" class="social instagram">Instagram</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Pollos El Regio
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
