@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pollos El Regio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="hero">
+        <img src="logo.jpeg" class="logo" alt="Pollos El Regio">
+        <h1>Pollos El Regio</h1>
+        <p>El auténtico sabor a la parrilla 🔥</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="Pedidos.html">Pedidos</a>
+        <a href="Ubicacion.html">Ubicacion</a>
+    </nav>
+
+<section id="pedidos" class="card">
+    <h2>Haz tu Pedido</h2>
+    <p>Ordena aquí y pasa a recoger o recibe en tu domicilio.</p>
+
+    <form>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="producto">Selecciona tu pedido:</label>
+        <select id="producto" name="producto" required>
+            <option value="">-- Elige una opción --</option>
+            <option value="pollo-entero">Pollo Entero</option>
+            <option value="medio-pollo">Medio Pollo</option>
+            <option value="tacos">Tacos</option>
+            <option value="combo-familiar">Combo Familiar</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+        <label for="direccion">Dirección (si es envío a domicilio):</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <button type="submit">Enviar Pedido</button>
+
+    </form>
+</section>
+
+<!-- PEDIDOS -->
+    <section id="pedido" class="card fade">
+        <h2>Pedido en línea</h2>
+
+        <form id="formPedido">
+            <input type="text" placeholder="Nombre" required>
+            <input type="tel" placeholder="Teléfono" required>
+
+            <select required>
+                <option value="">Selecciona tu pedido</option>
+                <option>Pollo entero</option>
+                <option>Medio pollo</option>
+                <option>Tacos</option>
+                <option>Combo familiar</option>
+            </select>
+
+            <button type="submit">Enviar pedido</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>

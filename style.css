@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 120px;
 }
 
 /* NAV */
@@ -82,6 +82,7 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 /* ANIMACIÓN */
@@ -104,20 +105,40 @@ footer {
     padding: 15px;
 }
 
-.botones-contacto {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
+/* Ubicacion */
+#ubicacion {
+    max-width: 1000px;
+    margin: 25px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
 }
 
-/* Botones redes */
-.social {
-    padding: 10px 15px;
-    border-radius: 6px;
+/* BOTONES CONTACTO */
+.contact-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Colores redes */
+.whatsapp {
+    background: #25d366;
 }
 
 .facebook {
@@ -128,6 +149,80 @@ footer {
     background: #e1306c;
 }
 
-.social:hover {
-    opacity: 0.85;
+.contenedor-ubicacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-ubicacion {
+    background: #ffe5b4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.formulario-ubicacion input,
+.formulario-ubicacion textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.formulario-ubicacion textarea {
+    resize: none;
+}
+
+.mapa {
+    margin-top: 25px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+
+/* UBICACIÓN */
+#ubicacion {
+    max-width: 1000px;
+    margin: 25px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.contenedor-ubicacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-ubicacion {
+    background: #ffe5b4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    border: 0;
+}
+
+
+
+
+
+#pedidos h2 {
+    text-align: center;
+}
+
+#pedidos form {
+    margin-top: 15px;
 }

@@ -19,11 +19,11 @@
 
     <!-- NAV -->
     <nav>
-        <a href="#nosotros">Nosotros</a>
+        <a href="index.html">Nosotros</a>
         <a href="#menu">Menú</a>
         <a href="#galeria">Galería</a>
-        <a href="#pedido">Pedidos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="Pedidos.html">Pedidos</a>
+        <a href="Ubicacion.html|">Ubicacion</a>
     </nav>
 
     <!-- NOSOTROS -->
@@ -42,7 +42,7 @@
         <div class="menu-grid">
             <div class="item">🍗 Pollo entero <span>$180</span></div>
             <div class="item">🍗 Medio pollo <span>$95</span></div>
-            <div class="item">🌮 Tacos de pollo <span>$60</span></div>
+            <div class="item">🌮 Tacos <span>$60</span></div>
             <div class="item">🥤 Combo familiar <span>$320</span></div>
         </div>
     </section>
@@ -52,9 +52,9 @@
         <h2>Galería</h2>
 
         <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1604908176997-4313c7fdd1c7" alt="">
-            <img src="https://images.unsplash.com/photo-1598514982846-3f4c8a9f75e1" alt="">
-            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="">
+            <img src="https://images.unsplash.com/photo-1604908176997-4313c7fdd1c7">
+            <img src="https://images.unsplash.com/photo-1598514982846-3f4c8a9f75e1">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec">
         </div>
     </section>
 
@@ -65,6 +65,7 @@
         <form id="formPedido">
             <input type="text" placeholder="Nombre" required>
             <input type="tel" placeholder="Teléfono" required>
+
             <select required>
                 <option value="">Selecciona tu pedido</option>
                 <option>Pollo entero</option>
@@ -72,27 +73,29 @@
                 <option>Tacos</option>
                 <option>Combo familiar</option>
             </select>
+
             <button type="submit">Enviar pedido</button>
         </form>
 
         <p id="mensaje"></p>
     </section>
 
-    <section>
+    <!-- CONTACTO -->
+     <section id="contacto" class="card fade">
         <h2>Contacto</h2>
 
         <p>📍 Tu dirección aquí</p>
         <p>📞 000-000-0000</p>
 
-        <div class="botones-contacto">
-            <button onclick="abrirWhatsApp()">WhatsApp</button>
+        <div class="contact-buttons">
+            <a href="https://wa.me/520000000000" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
 
-            <a href="https://facebook.com/tupagina" target="_blank" class="social facebook">Facebook</a>
+            <a href="https://facebook.com/tupagina" target="_blank" class="btn facebook">🔵 Facebook</a>
 
-            <a href="https://instagram.com/tupagina" target="_blank" class="social instagram">Instagram</a>
+            <a href="https://instagram.com/tupagina" target="_blank" class="btn instagram">📸 Instagram</a>
         </div>
-    </section>
-
+     </section>
+     
     <!-- FOOTER -->
     <footer>
         © 2026 Pollos El Regio
